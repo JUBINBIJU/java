@@ -1,5 +1,4 @@
 
-
 class Date{
 
 	private int date,month;
@@ -87,13 +86,13 @@ public class DateDemo{
 		Date jan1 = new Date(1,1);
 		for(int i=0;i<367;i++)
 		{
-			so.pr(jan1);
-			so.p("    " + jan1.absoluteDay());
+			System.out.print(jan1);
+			System.out.println("    " + jan1.absoluteDay());
 			jan1.nextDay();
 		}
-		so.p(jan1.daysInMonth());
-		so.p(jan1.daysInMonth(4));
-		so.p(jan1.getMonth());
-		so.p(jan1.getDay());
+		System.out.println(jan1.daysInMonth());
+		System.out.println(jan1.daysInMonth(4));
+		System.out.println(jan1.getMonth());
+		System.out.println(jan1.getDay());
 	}
 }
