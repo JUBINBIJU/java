@@ -37,7 +37,7 @@ class Rectangle implements Perimeter
     }
     public double perimeter()
     {
-        return 2*length*breadth;
+        return 2*(length+breadth);
     }
 }
 
